@@ -59,7 +59,8 @@ class MechanicalDogOptimized:
                 sensor_readings[idx] = i_squared + j * j
                 idx += 1
         
-        # FIX 8: Pre-allocated, so no need to extend
+        # FIX 8: Pre-allocated, replaces sensor_data for efficiency
+        # Note: Unlike slow version which extends, we replace to avoid memory growth
         self.sensor_data = sensor_readings
         
         return sensor_readings

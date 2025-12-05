@@ -5,6 +5,7 @@ This script measures and compares the performance improvements.
 
 import time
 import sys
+import traceback
 from dog_simulation_slow import MechanicalDog, simulate_dog_movement as simulate_slow
 from dog_simulation_optimized import MechanicalDogOptimized, simulate_dog_movement as simulate_optimized
 
@@ -204,6 +205,5 @@ if __name__ == "__main__":
         sys.exit(1)
     except Exception as e:
         print(f"\n\nError during benchmark: {e}")
-        import traceback
         traceback.print_exc()
         sys.exit(1)

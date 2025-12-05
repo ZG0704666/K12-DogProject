@@ -4,6 +4,7 @@ Tests verify that optimizations maintain correctness.
 """
 
 import math
+import sys
 from dog_simulation_slow import MechanicalDog
 from dog_simulation_optimized import MechanicalDogOptimized
 
@@ -219,6 +220,5 @@ def run_all_tests():
 
 
 if __name__ == "__main__":
-    import sys
     success = run_all_tests()
     sys.exit(0 if success else 1)

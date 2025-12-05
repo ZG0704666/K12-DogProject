@@ -12,9 +12,9 @@ class MechanicalDog:
     
     def __init__(self, name):
         self.name = name
-        self.position = [0, 0, 0]  # x, y, z coordinates
-        self.velocity = [0, 0, 0]
-        self.leg_positions = [[0, 0, 0] for _ in range(4)]  # 4 legs
+        self.position = [0.0, 0.0, 0.0]  # x, y, z coordinates
+        self.velocity = [0.0, 0.0, 0.0]
+        self.leg_positions = [[0.0, 0.0, 0.0] for _ in range(4)]  # 4 legs
         self.sensor_data = []
         self.movement_history = []
         
