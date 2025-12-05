@@ -1,0 +1,6 @@
+# No external dependencies required for basic simulation
+# All code uses Python standard library only
+
+# Optional: For advanced testing and benchmarking
+# pytest>=7.0.0
+# numpy>=1.21.0  # For future enhancements
